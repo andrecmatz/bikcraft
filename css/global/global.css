@@ -9,10 +9,16 @@ img {
     display: block;
 }
 
-h1, ul, p {
+h1, 
+ul, 
+p {
     margin: 0px;
 }
 
 a {
     color: inherit;
+}
+
+[src$=".jpg"] {
+    border-radius: 4px;
 }
