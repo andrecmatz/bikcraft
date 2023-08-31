@@ -41,3 +41,22 @@
     border-radius: 0 5px 5px 0;
     background: var(--cor-0);
 }
+
+.orcamento-produto label {
+    background: #ccc;
+    padding: 20px;
+    display: inline-block;
+}
+
+.orcamento-conteudo {
+    padding: 20px;
+    background: #222;
+    margin: 20px 0;
+    display: none;
+}
+
+/* ~ : Vai procurar o elemento que estiver apos ele */
+#bikcraft:checked ~ #orcamento-bikcraft,
+#seguro:checked ~ #orcamento-seguro {
+    display: block;
+}
