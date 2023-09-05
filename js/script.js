@@ -64,5 +64,14 @@ function eventosGaleria(img) {
 
 galeria.forEach(eventosGaleria);
 
+//  Animacao
+
+if(window.SimpleAnime) {
+    new SimpleAnime();
+}
+
+if(window.ClipboardJS) {
+new ClipboardJS('.introducao-conteudo p');
+}
 
 
