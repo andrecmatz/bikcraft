@@ -1,10 +1,9 @@
 pipeline {
-    agent none
+    agent {
+        docker 'maven:3.6.3-jdk-11'
+    }
     stages {
         stage('Build') {
-            agent {
-                docker {image 'maven' }
-            }
             steps {
                 sh 'mvn package -Dmaven.test.skip=true'
             }
